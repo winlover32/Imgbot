@@ -1,4 +1,4 @@
-﻿name: Dotnet Tests
+name: Dotnet Tests
 
 on:  
   pull_request:
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-        uses: actions/setup-dotnet@v1.7.2
+        uses: actions/setup-dotnet@v4.0.0
         with:
           dotnet-version: ${{ matrix.dotnet-version }}     
       - name: Install dependencies
